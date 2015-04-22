@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Bootstrap Video Demo</title>
+        <link rel="stylesheet" href="../src/css/bootstrap-video.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="../src/js/bootstrap-video.js"></script>
+        <style>
+
+            body {
+                background: white;
+                color: white;
+            }
+
+            .container {
+                background: black;
+                box-shadow: 0 0 12px 2px grey;
+                padding: 80px 15px 0;
+            }
+
+            h1 {
+                margin-bottom: 160px;
+            }
+
+            .bootstrap-video-container {
+                color: black;
+            }
+
+            .happy {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+                -webkit-transition: 0.5s all;
+                transition: 0.5s all;
+            }
+
+        </style>
+        <script>
+            $(document).on("ready", function(){
+
+                $("#video1").bootstrapVideo();
+
+                $("#video2").bootstrapVideo({
+                    playpauseonclick: false
+                });
+
+                $("#video3").bootstrapVideo({
+                    volume: 0.5
+                });
+
+                $("#video4").bootstrapVideo({
+                    muted: true
+                });
+
+                $("#video5").bootstrapVideo({
+                    autoplay: true
+                });
+
+                $("#video6").bootstrapVideo({
+                    controls: false
+                });
+
+                $("#video7").bootstrapVideo({
+                    draggableseekbar: false
+                });
+
+                $("#video8").bootstrapVideo({
+                    width: "300px"
+                });
+
+                $("#video9").bootstrapVideo({
+                    repeatonstop: true
+                });
+
+                $("#video10").bootstrapVideo({
+                    pauseclass: "happy"
+                });
+
+                $("#video11").bootstrapVideo({
+                    playpausebutton: false
+                });
+
+                $("#video12").bootstrapVideo({
+                    mutebutton: false
+                });
+
+                $("#video13").bootstrapVideo({
+                    seekbar: false
+                });
+
+                $("#video14").bootstrapVideo({
+                    volumebutton: false
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Bootstrap Video demo</h1>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Basic example</h2>
+                    <code>
+                        $("video").bootstrapVideo();
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video1" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Disable play/pause on click</h2>
+                    <code>
+                        $("video").bootstrapVideo({ playpauseonclick: false });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video2" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Set initial volume</h2>
+                    <code>
+                        $("video").bootstrapVideo({ volume: 0.5 });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video3" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Mute on init</h2>
+                    <code>
+                        $("video").bootstrapVideo({ muted: true });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video4" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Enable autoplay</h2>
+                    <code>
+                        $("video").bootstrapVideo({ autoplay: true });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video5" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Hide all controls</h2>
+                    <code>
+                        $("video").bootstrapVideo({ controls: false });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video6" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Disable scrolling</h2>
+                    <code>
+                        $("video").bootstrapVideo({ draggableseekbar: false });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video7" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Set custom size</h2>
+                    <code>
+                        $("video").bootstrapVideo({ width: "300px" });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video8" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Repeat when finished</h2>
+                    <code>
+                        $("video").bootstrapVideo({ repeatonstop: true });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video9" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Set custom class for paused video</h2>
+                    <code>
+                        $("video").bootstrapVideo({ pauseclass: "happy" });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video10" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Hide play/pause button</h2>
+                    <code>
+                        $("video").bootstrapVideo({ playpausebutton: false });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video11" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Hide mute button</h2>
+                    <code>
+                        $("video").bootstrapVideo({ mutebutton: false });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video12" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Hide progress bar</h2>
+                    <code>
+                        $("video").bootstrapVideo({ seekbar: false });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video13" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>Hide volume button</h2>
+                    <code>
+                        $("video").bootstrapVideo({ volumebutton: false });
+                    </code>
+                </div>
+                <div class="col-sm-4">
+                    <video id="video14" controls>
+                        <source src="movie2.mp4" type="video/mp4">
+                        <source src="movie2.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                        <a href="movie2.mp4">Download</a> the video instead.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

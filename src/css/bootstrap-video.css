@@ -1,0 +1,58 @@
+video.bootstrap-video {
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    margin: 0 auto;
+}
+
+video.bootstrap-video-paused {
+    -webkit-filter: grayscale(1) brightness(0.5);
+    filter: grayscale(1) brightness(0.5);
+}
+
+video.bootstrap-video-clickable {
+    cursor: pointer;
+}
+
+.bootstrap-video-controls {
+    position: relative;
+}
+
+.bootstrap-video-controls .btn {
+    margin: 4px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bootstrap-seek-bar {
+    margin: 6px 0 8px;
+}
+
+.bootstrap-volume-group {
+    position: relative;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 4px;
+    background-color: rgb(192, 192, 192);
+}
+
+.bootstrap-volume-group .btn {
+    margin: 0;
+}
+
+.bootstrap-volume-group .bootstrap-volume-bar {
+    position: absolute;
+    top: -28px;
+    left: calc(.8em - 4px);
+    display: none;
+    z-index: 10;
+}
+
+.bootstrap-volume-group.active .bootstrap-volume-bar {
+    display: block;
+}
+
+.bootstrap-volume-bar {
+    display: inline-block;
+    position: relative;
+    margin: -81px 4px 0;
+}
