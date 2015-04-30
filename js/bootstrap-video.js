@@ -179,3 +179,7 @@ $.prototype.bootstrapVideo = function (options){
         console.log(this);
     });
 }
+
+$(document).ready(function(){
+    $(".bootstrap-video").bootstrapVideo();
+});
