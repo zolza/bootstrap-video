@@ -1,0 +1,60 @@
+/*moved styles to the separate file*/
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: white;
+}
+
+.container {
+  background: rgb(125, 122, 122);
+  box-shadow: 0 0 12px 2px grey;
+  padding: 10px 15px 0;
+}
+
+h1 {
+  margin-bottom: 70px;
+}
+
+.bootstrap-video-container {
+  color: black;
+}
+
+.happy {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.navbar {
+  width: auto;
+  height: 200px;
+  background-color: white;
+  opacity: 0.5;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+}
+
+.navbar li {
+  width: 13.98%;
+  display: inline-block;
+  height: 40%;
+}
+
+.navbar li:hover {
+  background-color: orange;
+  opacity: 1;
+}
+.navbar li a {
+  text-decoration: none;
+  display: inline;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+
