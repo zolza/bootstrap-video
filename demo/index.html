@@ -9,7 +9,7 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="../js/scrollmenu.js"></script>
+        <script type="text/javascript" src="../js/scrollmenu.js"></script>
         <script src="../src/js/bootstrap-video.js"></script>
 <!--bootrstrap-video.js is doubled? Look at /src/js/bootstrap-video.js and /js/bootstrap-video.js, some differences in code-->
         <script>
@@ -75,23 +75,25 @@
     <body>
         <div class="container">
             <div class="navbar">
-            <li><a href="#" data-target=".basic">Basic example</a></li>
-            <li><a href="#" data-target=".playonclick">Disable play/pause on click</a></li>
-            <li><a href="#" data-target=".initialvol">Set initial volume</a></li>
-            <li><a href="#" data-target=".initialmute">Mute on init</a></li>
-            <li><a href="#" data-target=".autoplay">Enable autoplay</a></li>
-            <li><a href="#" data-target=".hidecontrols">Hide all controls</a></li>
-            <li><a href="#" data-target=".disablescrl">Disable scrolling</a></li>
-            <li><a href="#" data-target=".setsize">Set custom size</a></li>
-            <li><a href="#" data-target=".repeat">Autorepeat</a></li>
-            <li><a href="#" data-target=".custompaused">Set custom class for paused video</a></li>
-            <li><a href="#" data-target=".hideplay">Hide play/pause button</a></li>
-            <li><a href="#" data-target=".hidemute">Hide mute button</a></li>
-            <li><a href="#" data-target=".hideprog">Hide progress bar</a></li>
-            <li><a href="#" data-target=".hidevol">Hide volume button</a></li>
+                <li><a href="#" data-target=".basic">Basic example</a></li>
+                <li><a href="#" data-target=".playonclick">Disable play/pause on click</a></li>
+                <li><a href="#" data-target=".initialvol">Set initial volume</a></li>
+                <li><a href="#" data-target=".initialmute">Mute on init</a></li>
+                <li><a href="#" data-target=".autoplay">Enable autoplay</a></li>
+                <li><a href="#" data-target=".hidecontrols">Hide all controls</a></li>
+                <li><a href="#" data-target=".disablescrl">Disable scrolling</a></li>
+                <li><a href="#" data-target=".setsize">Set custom size</a></li>
+                <li><a href="#" data-target=".repeat">Autorepeat</a></li>
+                <li><a href="#" data-target=".custompaused">Set custom class for paused video</a></li>
+                <li><a href="#" data-target=".hideplay">Hide play/pause button</a></li>
+                <li><a href="#" data-target=".hidemute">Hide mute button</a></li>
+                <li><a href="#" data-target=".hideprog">Hide progress bar</a></li>
+                <li><a href="#" data-target=".hidevol">Hide volume button</a></li>
             </div>
+        </div>
+            <div class="container">
             <h1 class="text-center">Bootstrap Video demo</h1>
-            <div class="row" class="basic">
+            <div class="row basic">
                 <div class="col-sm-8">
                     <h2>Basic example</h2>
                     <code>
@@ -107,7 +109,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="playonclick">
+            <div class="row playonclick">
                 <div class="col-sm-8">
                     <h2>Disable play/pause on click</h2>
                     <code>
@@ -123,7 +125,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="initialvol">
+            <div class="row initialvol">
                 <div class="col-sm-8">
                     <h2>Set initial volume</h2>
                     <code>
@@ -139,7 +141,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="initialmute">
+            <div class="row initialmute">
                 <div class="col-sm-8">
                     <h2>Mute on init</h2>
                     <code>
@@ -155,7 +157,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="autoplay">
+            <div class="row autoplay">
                 <div class="col-sm-8">
                     <h2>Enable autoplay</h2>
                     <code>
@@ -171,7 +173,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="hidecontrols">
+            <div class="row hidecontrols">
                 <div class="col-sm-8">
                     <h2>Hide all controls</h2>
                     <code>
@@ -187,7 +189,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="disablescrl">
+            <div class="row disablescrl">
                 <div class="col-sm-8">
                     <h2>Disable scrolling</h2>
                     <code>
@@ -203,7 +205,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="setsize">
+            <div class="row setsize">
                 <div class="col-sm-8">
                     <h2>Set custom size</h2>
                     <code>
@@ -219,7 +221,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="repeat">
+            <div class="row repeat">
                 <div class="col-sm-8">
                     <h2>Repeat when finished</h2>
                     <code>
@@ -235,7 +237,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="custompaused">
+            <div class="row custompaused">
                 <div class="col-sm-8">
                     <h2>Set custom class for paused video</h2>
                     <code>
@@ -251,7 +253,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="hideplay">
+            <div class="row hideplay">
                 <div class="col-sm-8">
                     <h2>Hide play/pause button</h2>
                     <code>
@@ -267,7 +269,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="hidemute">
+            <div class="row hidemute">
                 <div class="col-sm-8">
                     <h2>Hide mute button</h2>
                     <code>
@@ -283,7 +285,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="hideprog">
+            <div class="row hideprog">
                 <div class="col-sm-8">
                     <h2>Hide progress bar</h2>
                     <code>
@@ -299,7 +301,7 @@
                     </video>
                 </div>
             </div>
-            <div class="row" class="hidevol">
+            <div class="row hidevol">
                 <div class="col-sm-8">
                     <h2>Hide volume button</h2>
                     <code>

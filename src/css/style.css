@@ -39,12 +39,15 @@ h1 {
   vertical-align: middle;
   text-align: center;
   margin: 0;
+  /*position: fixed;*/
+  z-index: 100;
 }
 
 .navbar li {
-  width: 13.98%;
+  width: 14.28%;
   display: inline-block;
-  height: 40%;
+  height: 50%;
+  float: left;
 }
 
 .navbar li:hover {
@@ -53,8 +56,39 @@ h1 {
 }
 .navbar li a {
   text-decoration: none;
-  display: inline;
+  display: inline-block;
   padding-top: 15px;
   padding-bottom: 15px;
   }
+
+.navbar2 {
+  width: auto;
+  height: 250px;
+  background-color: white;
+  opacity: 0.5;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+  /*position: fixed;*/
+  z-index: 100;
+}
+
+.navbar2 li {
+  width: 100%;
+  display: block;
+  height: 7.14%;
+  float: left;
+}
+
+.navbar2 li:hover {
+  background-color: orange;
+  opacity: 1;
+}
+.navbar2 li a {
+  text-decoration: none;
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  }
+
 
