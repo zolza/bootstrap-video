@@ -39,7 +39,6 @@ h1 {
   vertical-align: middle;
   text-align: center;
   margin: 0;
-  /*position: fixed;*/
   z-index: 100;
 }
 
@@ -51,15 +50,31 @@ h1 {
 }
 
 .navbar li:hover {
-  background-color: orange;
+  background-color: #50DA13;
   opacity: 1;
 }
 .navbar li a {
   text-decoration: none;
   display: inline-block;
-  padding-top: 15px;
+  padding-top: 33px;
   padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #073B7B;
   }
+
+.btnscrl {
+  padding: 20px 30px;
+  margin-top: 30px;
+  background-color: #50DA13;
+  border-radius: 3px;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.btnscrl:hover {
+  text-decoration: none;
+}
 
 .navbar2 {
   width: auto;
@@ -81,7 +96,7 @@ h1 {
 }
 
 .navbar2 li:hover {
-  background-color: orange;
+  background-color: #50DA13;
   opacity: 1;
 }
 .navbar2 li a {
@@ -89,6 +104,7 @@ h1 {
   display: block;
   padding-top: 0px;
   padding-bottom: 0px;
+  font-size: 16px;
   }
 
 

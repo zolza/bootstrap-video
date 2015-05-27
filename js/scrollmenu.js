@@ -14,6 +14,7 @@ $(document).ready(function(){
     $(window).on("resize", function(){
         if ($(window).width() < 1160) {
             $(".navbar").addClass("navbar2");
+            $(".navbar br").remove();
         } else {
             $(".navbar").removeClass("navbar2");
         }
