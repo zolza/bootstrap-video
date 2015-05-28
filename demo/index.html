@@ -5,41 +5,15 @@
         <link rel="stylesheet" href="../src/css/bootstrap-video.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="../src/css/style.css" />
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/scrollmenu.js"></script>
         <script src="../src/js/bootstrap-video.js"></script>
-        <style>
-
-            body {
-                background: white;
-                color: white;
-            }
-
-            .container {
-                background: black;
-                box-shadow: 0 0 12px 2px grey;
-                padding: 80px 15px 0;
-            }
-
-            h1 {
-                margin-bottom: 160px;
-            }
-
-            .bootstrap-video-container {
-                color: black;
-            }
-
-            .happy {
-                -webkit-transform: rotate(180deg);
-                transform: rotate(180deg);
-                -webkit-transition: 0.5s all;
-                transition: 0.5s all;
-            }
-
-        </style>
+<!--bootrstrap-video.js is doubled? Look at /src/js/bootstrap-video.js and /js/bootstrap-video.js, some differences in code-->
         <script>
-            $(document).on("ready", function(){
+            $(document).ready(function(){
 
                 $("#video1").bootstrapVideo();
 
@@ -100,13 +74,32 @@
     </head>
     <body>
         <div class="container">
+            <div class="navbar">
+                <li><a href="#" data-target=".basic">Basic example</a></li>
+                <li><a href="#" data-target=".playonclick">Disable play/pause on click</a></li>
+                <li><a href="#" data-target=".initialvol">Set initial volume</a></li>
+                <li><a href="#" data-target=".initialmute">Mute on init</a></li>
+                <li><a href="#" data-target=".autoplay">Enable autoplay</a></li>
+                <li><a href="#" data-target=".hidecontrols">Hide all controls</a></li>
+                <li><a href="#" data-target=".disablescrl">Disable scrolling</a></li>
+                <li><a href="#" data-target=".setsize">Set custom size</a></li>
+                <li><a href="#" data-target=".repeat">Autorepeat</a></li>
+                <li><a href="#" data-target=".custompaused">Set custom class for paused video</a></li>
+                <li><a href="#" data-target=".hideplay">Hide play/pause <br> button</a></li>
+                <li><a href="#" data-target=".hidemute">Hide mute button</a></li>
+                <li><a href="#" data-target=".hideprog">Hide progress bar</a></li>
+                <li><a href="#" data-target=".hidevol">Hide volume button</a></li>
+            </div>
+        </div>
+            <div class="container">
             <h1 class="text-center">Bootstrap Video demo</h1>
-            <div class="row">
+            <div class="row basic">
                 <div class="col-sm-8">
                     <h2>Basic example</h2>
                     <code>
                         $("video").bootstrapVideo();
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video1" controls>
@@ -117,12 +110,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row playonclick">
                 <div class="col-sm-8">
                     <h2>Disable play/pause on click</h2>
                     <code>
                         $("video").bootstrapVideo({ playpauseonclick: false });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video2" controls>
@@ -133,12 +127,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row initialvol">
                 <div class="col-sm-8">
                     <h2>Set initial volume</h2>
                     <code>
                         $("video").bootstrapVideo({ volume: 0.5 });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video3" controls>
@@ -149,12 +144,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row initialmute">
                 <div class="col-sm-8">
                     <h2>Mute on init</h2>
                     <code>
                         $("video").bootstrapVideo({ muted: true });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video4" controls>
@@ -165,12 +161,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row autoplay">
                 <div class="col-sm-8">
                     <h2>Enable autoplay</h2>
                     <code>
                         $("video").bootstrapVideo({ autoplay: true });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video5" controls>
@@ -181,12 +178,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row hidecontrols">
                 <div class="col-sm-8">
                     <h2>Hide all controls</h2>
                     <code>
                         $("video").bootstrapVideo({ controls: false });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video6" controls>
@@ -197,12 +195,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row disablescrl">
                 <div class="col-sm-8">
                     <h2>Disable scrolling</h2>
                     <code>
                         $("video").bootstrapVideo({ draggableseekbar: false });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video7" controls>
@@ -213,12 +212,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row setsize">
                 <div class="col-sm-8">
                     <h2>Set custom size</h2>
                     <code>
                         $("video").bootstrapVideo({ width: "300px" });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video8" controls>
@@ -229,12 +229,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row repeat">
                 <div class="col-sm-8">
                     <h2>Repeat when finished</h2>
                     <code>
                         $("video").bootstrapVideo({ repeatonstop: true });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video9" controls>
@@ -245,12 +246,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row custompaused">
                 <div class="col-sm-8">
                     <h2>Set custom class for paused video</h2>
                     <code>
                         $("video").bootstrapVideo({ pauseclass: "happy" });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video10" controls>
@@ -261,12 +263,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row hideplay">
                 <div class="col-sm-8">
                     <h2>Hide play/pause button</h2>
                     <code>
                         $("video").bootstrapVideo({ playpausebutton: false });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video11" controls>
@@ -277,12 +280,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row hidemute">
                 <div class="col-sm-8">
                     <h2>Hide mute button</h2>
                     <code>
                         $("video").bootstrapVideo({ mutebutton: false });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video12" controls>
@@ -293,12 +297,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row hideprog">
                 <div class="col-sm-8">
                     <h2>Hide progress bar</h2>
                     <code>
                         $("video").bootstrapVideo({ seekbar: false });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video13" controls>
@@ -309,12 +314,13 @@
                     </video>
                 </div>
             </div>
-            <div class="row">
+            <div class="row hidevol">
                 <div class="col-sm-8">
                     <h2>Hide volume button</h2>
                     <code>
                         $("video").bootstrapVideo({ volumebutton: false });
                     </code>
+                    <a href="#" class="btnscrl" data-target=".navbar">Scroll top</a>
                 </div>
                 <div class="col-sm-4">
                     <video id="video14" controls>
